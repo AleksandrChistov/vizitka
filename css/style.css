@@ -1,0 +1,341 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto-v20-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('fonts/roboto-v20-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-cyrillic_latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/roboto-v20-cyrillic_latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('fonts/roboto-v20-cyrillic_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-cyrillic_latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-cyrillic_latin-500.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-cyrillic_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-cyrillic_latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/roboto-v20-cyrillic_latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('fonts/roboto-v20-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-cyrillic_latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-900 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('fonts/roboto-v20-cyrillic_latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Black'), local('Roboto-Black'),
+       url('fonts/roboto-v20-cyrillic_latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-cyrillic_latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-cyrillic_latin-900.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-cyrillic_latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-cyrillic_latin-900.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+	width: 1920px;
+	max-width: 100%;
+  font: 16px 'Roboto', sans-serif;
+  background-color: #fbfbfb;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+	object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+.container {
+	max-width: 1250px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+
+.relative {
+	position: relative;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	background-color: #fbfbfb;
+}
+
+header svg {
+	display: none;
+}
+
+.menu {
+	flex-grow: 1;
+	margin-top: 10px;
+}
+
+.menu__item {
+	list-style: none;
+}
+
+.menu__item a {
+	color: #1f1f24;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	margin-right: 30px;
+}
+
+.menu__item a:hover {
+	border-bottom: 1px solid #1f1f24;
+}
+
+.menu__item .menu__item_underline {
+	color: #fc557c;
+	border-bottom: 1px solid #fc557c;
+}
+
+.menu__item .menu__item_underline:hover {
+	border: 0;
+}
+
+.menu__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.header__tel {
+	font-family: Roboto, sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	color: #1f1f24;
+	margin-right: 30px;
+	margin-top: 10px;
+}
+
+.сallback {
+	padding: 15px 40px;
+	color: #f53f4f;
+	background-color: transparent;
+	border: 1px solid #f82370;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.avatar {
+	padding: 170px 0 235px;
+	background: url('../img/bg-header.png') bottom right #fbfbfb no-repeat;
+	background-size: 813px 629px;
+}
+
+.avatar__info-wrap h1 {
+	font-family: Roboto, sans-serif;
+	font-size: 80px;
+	font-weight: 900;
+	color: #1f1f24;
+	margin: 0 0 20px;
+}
+
+.avatar__info-wrap p {
+	font-family: Roboto, sans-serif;
+	font-size: 25px;
+	color: #8993ad;
+	margin: 0 0 45px;
+}
+
+.button-orange {
+	width: 270px;
+	height: 60px;
+	padding: 0;
+	margin: 0;
+	background-color: #ff4e2e;
+	border: 0;
+	cursor: pointer;
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.avatar img {
+	position: absolute;
+	bottom: -235px;
+	right: -50px;
+	margin-right: 40px;
+}
+
+@media (max-width: 1024px) {
+	body {
+		min-width: auto;
+	}
+	.container {
+		margin: 0;
+	}
+	header svg {
+		display: block;
+		cursor: pointer;
+		margin-top: 5px;
+		flex-grow: 1;
+	}
+	.menu {
+		display: none;
+	}
+	.button-orange {
+		font-weight: 500;
+		width: 320px;
+    height: 68px;
+	}
+	.avatar {
+		background-position: 480px bottom;
+    background-size: 813px 525px;
+	}
+	.avatar__info-wrap h1 {
+		font-size: 54px;
+	}
+	.avatar img {
+		right: 0;
+	}
+	.avatar__info-wrap {
+		max-width: 60%;
+	}
+}
+
+@media (max-width: 801px) {
+	.avatar {
+		background-position: -50px bottom;
+    background-size: 130% 75%;
+		padding: 50px 0 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.relative {
+		position: static;
+		height: 0;
+		display: flex;
+		justify-content: center;
+	}
+	.avatar img {
+		margin: 0 auto;
+		padding: 0 40px;
+		bottom: 0;
+		right: 0;
+		position: static;
+	}
+	.avatar__info-wrap {
+		max-width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 611px) {
+	.container {
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	header {
+		margin-top: 25px;
+	}
+	header svg {
+		flex-grow: 0;
+		height: 18px;
+    width: 24px;
+	}
+	.line-1 {
+		width: 24px;
+    height: 3px;
+	}
+	.line-2 {
+		width: 24px;
+		height: 3px;
+		y: 7px;
+	}
+	.line-3 {
+		width: 24px;
+		height: 3px;
+		y: 14px;
+	}
+	.сallback-small {
+		background: url('../img/icons/call-me.png') center no-repeat;
+		background-size: 26px 26px;
+		width: 26px;
+    height: 26px;
+		border: 0;
+		cursor: pointer;
+	}
+	.header__tel {
+		font-size: 18px;
+		margin-right: 0;
+		margin-top: 5px;
+	}
+	.avatar__info-wrap h1 {
+		margin: 0 0 10px;
+		font-size: 42px;
+	}
+	.avatar__info-wrap p {
+		margin: 0 0 25px;
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 450px) {
+	.avatar {
+		position: relative;
+	}
+	.avatar__info-wrap {
+    padding: 0 20px;
+	}
+	.avatar__info-wrap h1 {
+    font-size: 30px;
+	}
+	.avatar__info-wrap p {
+		font-size: 16px;
+	}
+	.button-orange {
+    font-weight: 400;
+    width: 450px;
+		height: 55px;
+		max-width: 100%;
+	}
+}
