@@ -101,7 +101,7 @@ p {
 header {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 30px;
+	margin-bottom: 55px;
 	margin-top: 30px;
 	background-color: #fbfbfb;
 }
@@ -151,11 +151,13 @@ header svg {
 	font-weight: 700;
 	color: #1f1f24;
 	margin-right: 30px;
-	margin-top: 10px;
+	margin-top: 8px;
 }
 
 .сallback {
-	padding: 15px 40px;
+	width: 207px;
+	height: 45px;
+	padding: 0;
 	color: #f53f4f;
 	background-color: transparent;
 	border: 1px solid #f82370;
@@ -168,7 +170,7 @@ header svg {
 	padding: 170px 0 235px;
 	background: url('../img/bg-header.png') bottom right #fbfbfb no-repeat;
 	background-size: 813px 629px;
-	margin-bottom: 100px;
+	margin-bottom: 95px;
 }
 
 .avatar__info-wrap h1 {
@@ -176,14 +178,14 @@ header svg {
 	font-size: 80px;
 	font-weight: 900;
 	color: #1f1f24;
-	margin: 0 0 20px;
+	margin: 0 0 25px;
 }
 
 .avatar__info-wrap p {
 	font-family: Roboto, sans-serif;
 	font-size: 25px;
 	color: #8993ad;
-	margin: 0 0 45px;
+	margin: 0 0 50px;
 }
 
 .button-orange {
@@ -203,20 +205,20 @@ header svg {
 	position: absolute;
 	bottom: -235px;
 	right: -50px;
-	margin-right: 40px;
+	margin-right: 20px;
 }
 
 .price {
 	background-image: linear-gradient(15deg, #ff8f5a, #ff8f5a90, #ff2f96, #ff2f96);
 	background-color: #ff8f5a;
-	padding: 80px 0 50px;
+	padding: 80px 0;
 	margin: 0 auto;
 }
 
 .price__wrap {
 	display: flex;
 	flex-direction: column;
-	max-width: 920px;
+	max-width: 945px;
 	margin: 0 auto;
 }
 
@@ -227,22 +229,31 @@ header svg {
 	line-height: 60px;
 	color: #fff;
 	margin: 0;
+	margin-bottom: 30px;
 }
 
 .price__description {
 	font-family: Roboto, sans-serif;
 	font-size: 18px;
-	font-weight: 400;
 	line-height: 30px;
 	color: #fff;
 	margin: 0;
-	white-space: pre-wrap;
+	margin-left: 10px;
+	position: relative;
+	max-width: 750px;
 }
 
+.price__description span {
+	position: absolute;
+	left: -12px;
+	top: -2px;
+	font-size: 20px;
+}
 
+/* Адаптивная верстка */
 @media (max-width: 1024px) {
 	body {
-		min-width: auto;
+		min-width: 320px;
 	}
 	.container {
 		margin: 0;
@@ -274,15 +285,22 @@ header svg {
 	.avatar__info-wrap {
 		max-width: 60%;
 	}
+	.price {
+		padding: 80px 40px;
+	}
+	.price__wrap {
+    margin: 0;
+	}
 }
 
-@media (max-width: 801px) {
+@media (max-width: 800px) {
 	.avatar {
 		background-position: -50px bottom;
     background-size: 130% 75%;
-		padding: 50px 0 0;
+		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
+		margin-bottom: 0;
 	}
 	.relative {
 		position: static;
@@ -301,6 +319,7 @@ header svg {
 		max-width: 100%;
 		text-align: center;
 		margin-top: 20px;
+		margin-bottom: 100px;
 	}
 }
 
@@ -342,7 +361,7 @@ header svg {
 	.header__tel {
 		font-size: 18px;
 		margin-right: 0;
-		margin-top: 5px;
+		margin-top: 3px;
 	}
 	.avatar__info-wrap h1 {
 		margin: 0 0 10px;
@@ -352,9 +371,22 @@ header svg {
 		margin: 0 0 25px;
 		font-size: 20px;
 	}
+	.price {
+    padding: 50px 40px;
+	}
+	.price__title {
+		font-size: 28px;
+		line-height: 40px;
+	}
+	.price__description {
+		font-size: 15px;
+	}
 }
 
 @media (max-width: 450px) {
+	header {
+		margin-bottom: 80px;
+	}
 	.avatar {
 		position: relative;
 	}
@@ -368,9 +400,13 @@ header svg {
 		font-size: 16px;
 	}
 	.button-orange {
+		font-size: 16px;
     font-weight: 400;
     width: 450px;
 		height: 55px;
 		max-width: 100%;
+	}
+	.price {
+    padding: 50px 20px;
 	}
 }
