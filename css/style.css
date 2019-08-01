@@ -250,6 +250,93 @@ header svg {
 	font-size: 20px;
 }
 
+.doing-and-work {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 195px;
+	text-align: center;
+}
+
+.margin {
+	margin-bottom: 100px;
+}
+
+.doing-and-work h2 {
+	font-family: Roboto, sans-serif;
+	font-size: 54px;
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 95px;
+}
+
+.item__wrap {
+	display: flex;
+	margin-bottom: 95px;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+.wrap-slider {
+	position: relative;
+}
+
+.doing__item:first-child {
+	background: url('../img/icons/layout.png') center top no-repeat;
+	background-size: 80px 74px;
+}
+
+.doing__item:nth-child(2) {
+	background: url('../img/icons/responsive.png') center top no-repeat;
+	background-size: 79px 74px;
+}
+
+.doing__item:nth-child(3) {
+	background: url('../img/icons/programming.png') center top no-repeat;
+	background-size: 74px 74px;
+}
+
+.doing__item:last-child {
+	background: url('../img/icons/coding.png') center top no-repeat;
+	background-size: 74px 74px;
+}
+
+.doing__item p {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	color: #8993ad;
+	margin: 0;
+	padding-top: 100px;
+}
+
+.work__item:not(:nth-child(3)) {
+	margin-right: 30px;
+}
+
+.work__item img {
+	margin-bottom: 30px;
+}
+
+.work__item p {
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	color: #8993ad;
+	margin: 0;
+}
+
+.arrow-left {
+	background: url('../img/icons/arrow.png') no-repeat;
+	background-size: 61px 60px;
+	width: 61px;
+	height: 60px;
+	position: absolute;
+	top: 33%;
+	left: -30px;
+	filter: drop-shadow(2px 2px 4px #00000080);
+}
+
 /* Адаптивная верстка */
 @media (max-width: 1024px) {
 	body {
