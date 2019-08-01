@@ -168,6 +168,7 @@ header svg {
 	padding: 170px 0 235px;
 	background: url('../img/bg-header.png') bottom right #fbfbfb no-repeat;
 	background-size: 813px 629px;
+	margin-bottom: 100px;
 }
 
 .avatar__info-wrap h1 {
@@ -204,6 +205,40 @@ header svg {
 	right: -50px;
 	margin-right: 40px;
 }
+
+.price {
+	background-image: linear-gradient(15deg, #ff8f5a, #ff8f5a90, #ff2f96, #ff2f96);
+	background-color: #ff8f5a;
+	padding: 80px 0 50px;
+	margin: 0 auto;
+}
+
+.price__wrap {
+	display: flex;
+	flex-direction: column;
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+.price__title {
+	font-family: Roboto, sans-serif;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 60px;
+	color: #fff;
+	margin: 0;
+}
+
+.price__description {
+	font-family: Roboto, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	color: #fff;
+	margin: 0;
+	white-space: pre-wrap;
+}
+
 
 @media (max-width: 1024px) {
 	body {

@@ -6,6 +6,12 @@ $(function(){
     $('.avatar img').prependTo($('.avatar'));
   }
 
+  if( windowWidth <= 610 ) {
+    $('.сallback').text('');
+    $('.сallback').removeClass();
+    $('header form button').addClass('сallback-small');
+  }
+
   window.addEventListener("resize", function() {
 		var windowWidth = $(window).width();
 		if( windowWidth <= 800 ) {
@@ -17,13 +23,6 @@ $(function(){
     }
   }, false);
 
-  var windowWidth = $(window).width();
-  if( windowWidth <= 610 ) {
-    $('.сallback').text('');
-    $('.сallback').removeClass();
-    $('header form button').addClass('сallback-small');
-  }
-  
   window.addEventListener("resize", function() {
 		var windowWidth = $(window).width();
 		if( windowWidth <= 610 ) {
