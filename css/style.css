@@ -143,7 +143,7 @@ header {
 	background-color: #fbfbfb;
 }
 
-header svg {
+.toggle-menu {
 	display: none;
 }
 
@@ -528,14 +528,35 @@ header svg {
 	header {
     margin-bottom: 40px;
 	}
-	header svg {
-		display: block;
-		cursor: pointer;
-		margin-top: 5px;
-		flex-grow: 1;
-	}
 	.menu {
 		display: none;
+	}
+	.toggle-menu {
+		width: 45px;
+		height: 32px;
+		margin-top: 5px;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+	}
+	.toggle-menu__line {
+		width: 45px;
+		height: 6px;
+	}
+	.toggle-menu__line:first-child {
+		background: linear-gradient(60deg, #ff418b, #ff2f96);
+		margin-bottom: 7px;
+	}
+	.toggle-menu__line:nth-child(2) {
+		background: linear-gradient(60deg, #ff756a, #ff4588);
+		margin-bottom: 7px;
+	}
+	.toggle-menu__line:last-child {
+		background: linear-gradient(60deg, #ff8f5a, #ff7868);
 	}
 	.button-orange {
 		font-weight: 500;
@@ -669,26 +690,17 @@ header svg {
 	header {
 		margin-top: 25px;
 	}
-	header svg {
+	.toggle-menu {
 		flex-grow: 0;
 		height: 18px;
-    width: 24px;
+		width: 24px;
 	}
-	.line-1 {
+	.toggle-menu__line {
 		width: 24px;
     height: 3px;
 	}
-	.line-2 {
-		width: 24px;
-		height: 3px;
-		-webkit-y: 7px;
-		-moz-y: 7px;
-	}
-	.line-3 {
-		width: 24px;
-		height: 3px;
-		-webkit-y: 14px;
-		-moz-y: 14px;
+	.toggle-menu__line:not(:last-child) {
+		margin-bottom: 4px;
 	}
 	.сallback-small {
 		background: url('../img/icons/call-me.png') center no-repeat;
