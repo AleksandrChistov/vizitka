@@ -5,6 +5,7 @@ $(function(){
   if( windowWidth <= 800 ) {
     $('.avatar__info-wrap').insertAfter($('.avatar'));
     $('.avatar img').prependTo($('.avatar'));
+    $('.avatar__info-wrap .button-orange').addClass('button-center');
   }
 
   if( windowWidth <= 610 ) {
@@ -19,9 +20,11 @@ $(function(){
 		if( windowWidth <= 800 ) {
       $('.avatar__info-wrap').insertAfter($('.avatar'));
       $('.avatar img').prependTo($('.avatar'));
+      $('.avatar__info-wrap .button-orange').addClass('button-center');
 		}else {
       $('.avatar__info-wrap').prependTo($('.relative'));
       $('.avatar img').prependTo($('.relative'));
+      $('.avatar__info-wrap .button-orange').removeClass('button-center');
     }
   }, false);
 
