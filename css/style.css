@@ -436,6 +436,7 @@ header svg {
 .fa-phone-alt:before {
 	content: "\f879";
 	background: linear-gradient(to right, #ff2f96, #ff8f5a);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -450,6 +451,7 @@ header svg {
 
 .fa-envelope:before {
 	background: linear-gradient(to bottom, #ff2f96, #ff8f5a);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -679,12 +681,14 @@ header svg {
 	.line-2 {
 		width: 24px;
 		height: 3px;
-		y: 7px;
+		-webkit-y: 7px;
+		-moz-y: 7px;
 	}
 	.line-3 {
 		width: 24px;
 		height: 3px;
-		y: 14px;
+		-webkit-y: 14px;
+		-moz-y: 14px;
 	}
 	.сallback-small {
 		background: url('../img/icons/call-me.png') center no-repeat;
@@ -848,10 +852,12 @@ header svg {
 	}
 	.fa-phone-alt:before {
     background: linear-gradient(to right, #ff2f96, #ff2f96, #ff8f5a);
-    -webkit-background-clip: text;
+		background-clip: text;
+		-webkit-background-clip: text;
 	}
 	.fa-envelope:before {
 		background: linear-gradient(to bottom, #ff2f96, #ff2f96, #ff8f5a);
-    -webkit-background-clip: text;
+    background-clip: text;
+		-webkit-background-clip: text;
 	}
 }
