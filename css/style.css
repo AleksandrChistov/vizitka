@@ -573,7 +573,7 @@ header {
 	}
 	.avatar img {
 		right: 0;
-		padding-right: 50px;
+		padding-right: 40px;
 	}
 	.avatar__info-wrap {
 		max-width: 60%;
@@ -638,7 +638,7 @@ header {
 
 @media (max-width: 800px) {
 	.avatar {
-		background-position: -50px bottom;
+		background-position: -60px bottom;
     background-size: 125% 90%;
 		padding: 0;
 		display: flex;
