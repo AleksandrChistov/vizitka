@@ -51,31 +51,6 @@
        url('../fonts/roboto-v20-cyrillic_latin-900.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
-@font-face {
-  font-family: 'Font Awesome 5 Free';
-  font-style: normal;
-  font-weight: 900;
-  font-display: auto;
-  src: url("../webfonts/fa-solid-900.eot");
-	src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); 
-}
-
-.fa,
-.fas {
-  font-family: 'Font Awesome 5 Free';
-	font-weight: 900; 
-}
-
-.fa, .fas, .far, .fal, .fad, .fab {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	font-style: normal;
-	font-variant: normal;
-	text-rendering: auto;
-	line-height: 1;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -127,15 +102,11 @@ p {
 	padding: 0 40px;
 }
 
-.container-margin {
-	margin: 0;
-}
-
 .relative {
 	position: relative;
 }
 
-header {
+.header {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 30px;
@@ -293,12 +264,14 @@ header {
 	padding-top: 90px;
 	text-align: center;
 	background-color: #ffffff;
+	margin: 0;
+	max-width: 100%;
 }
 
 .properties {
-	flex-direction: row;
-	justify-content: center;
 	background-color: #fbfbfb;
+	max-width: 1250px;
+	margin: 0 auto;
 }
 
 .doing-and-work h2 {
@@ -307,14 +280,15 @@ header {
 	margin-bottom: 85px;
 }
 
-.container-margin h2 {
+.properties h2 {
 	margin-bottom: 100px;
 }
 
 .item__wrap {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 95px;
+	max-width: 1170px;
+	margin: 0 auto 95px;
 }
 
 .item__work {
@@ -380,16 +354,17 @@ header {
 	width: 61px;
 	height: 60px;
 	position: absolute;
+	border: 0;
 }
 
 .arrow-left {
-	top: 34%;
+	top: 26%;
 	left: -30px;
 	filter: drop-shadow(2px 2px 4px #00000080);
 }
 
 .arrow-right {
-	top: 34%;
+	top: 26%;
 	right: -30px;
 	filter: drop-shadow(2px -2px 4px #00000080);
 	transform: rotate(180deg);
@@ -409,10 +384,9 @@ header {
 	margin-left: 100px;
 }
 
-.email a span {
+.email a {
 	font: 25px 'Roboto', sans-serif;
 	color: #000000;
-	margin-left: 20px;
 }
 
 .email li, .social li {
@@ -429,31 +403,16 @@ header {
 	margin-top: 5px;
 }
 
-.fa-phone-alt {
-	font-size: 19px;
+.footer__call {
+	background: url('../img/icons/call.png') left center no-repeat;
+	background-size: 18px 18px;
+	padding-left: 37px;
 }
 
-.fa-phone-alt:before {
-	content: "\f879";
-	background: linear-gradient(to right, #ff2f96, #ff8f5a);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.fa-envelope {
-	font-size: 20px;
-}
-
-.fa-envelope:before {
-	content: "\f0e0";
-}
-
-.fa-envelope:before {
-	background: linear-gradient(to bottom, #ff2f96, #ff8f5a);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+.footer__mail {
+	background: url('../img/icons/envelope.png') left 60% no-repeat;
+	background-size: 23px 15px;
+	padding-left: 44px;
 }
 
 .social {
@@ -507,6 +466,7 @@ header {
 	padding: 30px;
 	background-color: #31293c;
 	text-align: center;
+	margin: 0;
 }
 
 .flex {
@@ -525,13 +485,16 @@ header {
 	.container {
 		margin: 0;
 	}
-	header {
-    margin-bottom: 40px;
+	.header {
+		margin-bottom: 40px;
+		margin-top: 30px;
 	}
 	.menu {
 		display: none;
 	}
 	.toggle-menu {
+		background: url('../img/icons/toggle-menu.png') left top no-repeat;
+		background-size: 45px 32px;
 		width: 45px;
 		height: 32px;
 		margin-top: 5px;
@@ -542,21 +505,6 @@ header {
 		border: none;
 		padding: 0;
 		cursor: pointer;
-	}
-	.toggle-menu__line {
-		width: 45px;
-		height: 6px;
-	}
-	.toggle-menu__line:first-child {
-		background: linear-gradient(60deg, #ff418b, #ff2f96);
-		margin-bottom: 7px;
-	}
-	.toggle-menu__line:nth-child(2) {
-		background: linear-gradient(60deg, #ff756a, #ff4588);
-		margin-bottom: 7px;
-	}
-	.toggle-menu__line:last-child {
-		background: linear-gradient(60deg, #ff8f5a, #ff7868);
 	}
 	.button-orange {
 		font-weight: 500;
@@ -678,7 +626,7 @@ header {
 	}
 }
 
-@media (max-width: 611px) {
+@media (max-width: 610px) {
 	.container {
 		margin: 0 auto;
 		padding: 0 20px;
@@ -687,20 +635,15 @@ header {
 		padding-top: 35px;
     padding-bottom: 50px;
 	}
-	header {
+	.header {
 		margin-top: 25px;
+		margin-bottom: 40px;
 	}
 	.toggle-menu {
 		flex-grow: 0;
+		width: 24px;
 		height: 18px;
-		width: 24px;
-	}
-	.toggle-menu__line {
-		width: 24px;
-    height: 3px;
-	}
-	.toggle-menu__line:not(:last-child) {
-		margin-bottom: 4px;
+		background-size: 24px 18px;
 	}
 	.сallback-small {
 		background: url('../img/icons/call-me.png') center no-repeat;
@@ -744,7 +687,7 @@ header {
 		font: 900 30px 'Roboto', sans-serif;
 		margin-bottom: 45px;
 	}
-	.container-margin h2 {
+	.properties h2 {
     margin-bottom: 40px;
 	}
 	.item__wrap {
@@ -769,9 +712,17 @@ header {
 	.email li:first-child {
 		margin-bottom: 20px;
 	}
-	.email a span {
+	.email a {
     font: 500 20px 'Roboto', sans-serif;
     color: #8993ad;
+	}
+	.footer__call {
+    background-size: 13px 13px;
+    padding-left: 32px;
+	}
+	.footer__mail {
+    background-size: 14px 10px;
+    padding-left: 33px;
 	}
 	.fa-phone-alt {
     font-size: 14px;
@@ -787,7 +738,7 @@ header {
 }
 
 @media (max-width: 450px) {
-	header {
+	.header {
 		margin-bottom: 80px;
 	}
 	.avatar {
@@ -835,7 +786,7 @@ header {
 	.email ul {
     margin-top: 0;
 	}
-	.email a span {
+	.email a {
 		font: 500 20px 'Roboto', sans-serif;
 	}
 	.doing__item p {

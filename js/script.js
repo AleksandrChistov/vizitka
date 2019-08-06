@@ -11,7 +11,7 @@ $(function(){
   if( windowWidth <= 610 ) {
     $('header .сallback').text('');
     $('header .сallback').removeClass();
-    $('header form button').addClass('сallback-small');
+    $('header #сallback').addClass('сallback-small');
     $('.social .сallback-footer').addClass('button-orange');
   }
 
@@ -33,12 +33,12 @@ $(function(){
 		if( windowWidth <= 610 ) {
       $('header .сallback').text('');
       $('header .сallback').removeClass();
-      $('header form button').addClass('сallback-small');
+      $('header #сallback').addClass('сallback-small');
       $('.social .сallback-footer').addClass('button-orange');
 		}else {
       $('.сallback-small').text('Заказать звонок');
       $('.сallback-small').removeClass();
-      $('header form button').addClass('сallback');
+      $('header #сallback').addClass('сallback');
       $('.social .сallback-footer').removeClass('button-orange');
     }
   }, false);
