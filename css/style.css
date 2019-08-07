@@ -157,6 +157,8 @@ p {
 	color: #1f1f24;
 	margin-right: 30px;
 	margin-top: 8px;
+	flex-grow: 1;
+	text-align: right;
 }
 
 .сallback {
@@ -172,7 +174,14 @@ p {
 
 .сallback-footer {
 	width: 248px;
+	height: 45px;
+	padding: 0;
 	margin-bottom: 30px;
+	color: #ff6375;
+	background-color: transparent;
+	border: 1px solid #ff5e79;
+	font: 16px 'Roboto', sans-serif;
+	cursor: pointer;
 }
 
 .avatar {
@@ -500,7 +509,6 @@ p {
 		margin-top: 5px;
 		display: flex;
 		flex-direction: column;
-		flex-grow: 1;
 		background-color: transparent;
 		border: none;
 		padding: 0;
@@ -645,18 +653,20 @@ p {
 		height: 18px;
 		background-size: 24px 18px;
 	}
-	.сallback-small {
+	.сallback {
+		font-size: 0;
+		border: 0;
 		background: url('../img/icons/call-me.png') center no-repeat;
 		background-size: 26px 26px;
 		width: 26px;
     height: 26px;
-		border: 0;
 		cursor: pointer;
 	}
 	.header__tel {
 		font-size: 18px;
 		margin-right: 0;
 		margin-top: 3px;
+		text-align: center;
 	}
 	.avatar__info-wrap {
 		background-color: #fff;
@@ -731,9 +741,13 @@ p {
     font-size: 14px;
 	}
 	.сallback-footer {
-		width: 248px;
-		height: 55px;
+		width: 280px;
+    height: 55px;
     margin-bottom: 50px;
+    background-color: #ff4e2e;
+    border: 0;
+    cursor: pointer;
+    color: #ffffff;
 	}
 }
 
