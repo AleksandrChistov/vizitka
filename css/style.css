@@ -152,13 +152,15 @@ p {
 	padding: 0;
 }
 
+.call {
+	display: flex;
+}
+
 .header__tel {
 	font: 700 25px 'Roboto', sans-serif;
 	color: #1f1f24;
 	margin-right: 30px;
 	margin-top: 8px;
-	flex-grow: 1;
-	text-align: right;
 }
 
 .сallback {
@@ -186,7 +188,7 @@ p {
 
 .avatar {
 	padding: 170px 0 235px;
-	background: url('../img/bg-header.png') bottom right #fbfbfb no-repeat;
+	background: url('../img/bg-avatar.svg') bottom right #fbfbfb no-repeat;
 	background-size: 813px 629px;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -364,6 +366,7 @@ p {
 	height: 60px;
 	position: absolute;
 	border: 0;
+	cursor: pointer;
 }
 
 .arrow-left {
@@ -594,25 +597,24 @@ p {
 
 @media (max-width: 800px) {
 	.avatar {
-		background-position: -60px bottom;
-    background-size: 125% 90%;
+		background: transparent;
 		padding: 0;
-		display: flex;
-		flex-wrap: wrap;
 		margin-bottom: 0;
 	}
 	.relative {
-		position: static;
-		height: 0;
-		display: flex;
-		justify-content: center;
+		position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
 	}
 	.avatar img {
-		margin: 0 auto;
+		background: url('../img/bg-avatar.svg') -60px bottom #fbfbfb no-repeat;
+    background-size: 125% 90%;
+		margin: 0;
 		padding: 0 40px;
-		bottom: 0;
-		right: 0;
 		position: static;
+		object-position: bottom;
+		height: 500px;
 	}
 	.avatar__info-wrap {
 		max-width: 100%;
@@ -622,6 +624,9 @@ p {
 	}
 	.avatar__info-wrap h1 {
     margin-top: 10px;
+	}
+	.button-orange {
+    margin: 0 auto;
 	}
 	.social {
 		flex-basis: 100%;
@@ -639,6 +644,9 @@ p {
 		margin: 0 auto;
 		padding: 0 20px;
 	}
+	.relative {
+		padding: 0;
+	}
 	.flex {
 		padding-top: 35px;
     padding-bottom: 50px;
@@ -652,6 +660,10 @@ p {
 		width: 24px;
 		height: 18px;
 		background-size: 24px 18px;
+	}
+	.call {
+    justify-content: space-between;
+    flex-grow: 1;
 	}
 	.сallback {
 		font-size: 0;
@@ -667,6 +679,7 @@ p {
 		margin-right: 0;
 		margin-top: 3px;
 		text-align: center;
+		flex-grow: 1;
 	}
 	.avatar__info-wrap {
 		background-color: #fff;
@@ -757,6 +770,9 @@ p {
 	}
 	.avatar {
 		position: relative;
+	}
+	.avatar img {
+		height: 330px;
 	}
 	.avatar__info-wrap {
 		padding: 15px 20px 0;

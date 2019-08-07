@@ -1,0 +1,12 @@
+<svg width="813" height="629" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+      <linearGradient id="pink"
+                  x1="25%" y1="0%"
+                  x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#ff2f96" />
+        <stop offset="100%" stop-color="#ff8b5d" />
+      </linearGradient>
+  </defs>
+  <path d="M198 200 C 420 -50 660 -50 815 128 v 505 h -794 Q -57 495 198 200" fill="url(#pink)"></path>
+  Ваш браузер не поддерживает SVG. Пожалуйста, обновите его или используйте другой.
+</svg>

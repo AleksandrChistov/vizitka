@@ -6,8 +6,6 @@
 		<title>Frontend-разработчик и веб-верстальщик – Александр Чистов</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/script.js"></script>
 	</head>
 	<body>
 			<header class="header container">
@@ -20,22 +18,24 @@
 						<li class="menu__item"><a href="#">Стоимость</a></li>
 					</ul>
 				</nav>
-				<a href="tel:8(953)876-16-72" class="header__tel">8 (953) 876-16-72</a>
+				<div class="call">
+					<a href="tel:8(953)876-16-72" class="header__tel">8 (953) 876-16-72</a>
 					<button class="сallback" aria-label="Обратный звонок" id="сallback">Заказать звонок</button>
+				</div>
 			</header>
 
 			<main class="main">
 				<section class="avatar">
 					<div class="container relative">
-						<div class="avatar__info-wrap">
-						<h1>Александр Чистов</h1>
-						<p>Frontend-разработчик и веб-верстальщик</p>
-						<a href="#doing" class="button-orange">Узнать больше</a>
-						</div>
 						<img src="img/aleksandr.png" alt="Моё фото">
+						<div class="avatar__info-wrap">
+							<h1>Александр Чистов</h1>
+							<p>Frontend-разработчик и веб-верстальщик</p>
+							<a href="#doing" class="button-orange">Узнать больше</a>
+						</div>
 					</div>
 				</section>
-
+				
 				<section class="doing-and-work container">
 						<h2 id="doing">Что я делаю</h2>
 						<ul class="item__wrap">
