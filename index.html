@@ -9,7 +9,7 @@
 	</head>
 	<body>
 			<header class="header container">
-				<button type="button" aria-label="Открыть меню" class="toggle-menu">
+				<button type="button" aria-label="Открыть меню" class="header__toggle-menu">
 				</button>
 				<nav class="menu">
 					<ul class="menu__list">
@@ -18,39 +18,44 @@
 						<li class="menu__item"><a href="#">Стоимость</a></li>
 					</ul>
 				</nav>
-				<div class="call">
+				<div class="header__call">
 					<a href="tel:8(953)876-16-72" class="header__tel">8 (953) 876-16-72</a>
-					<button class="сallback" aria-label="Обратный звонок" id="сallback">Заказать звонок</button>
+					<button class="header__сallback" aria-label="Обратный звонок" id="сallback">Заказать звонок</button>
 				</div>
 			</header>
 
 			<main class="main">
 				<section class="avatar">
 					<div class="container relative">
-						<img src="img/aleksandr.png" alt="Моё фото">
+						<img class="avatar__img" src="img/aleksandr.png" alt="Моё фото">
 						<div class="avatar__info-wrap">
-							<h1>Александр Чистов</h1>
-							<p>Frontend-разработчик и веб-верстальщик</p>
-							<a href="#doing" class="button-orange">Узнать больше</a>
+							<h1 class="avatar__title">Александр Чистов</h1>
+							<p class="avatar__description">Frontend-разработчик и веб-верстальщик</p>
+							<a href="#doing" class="button_orange">Узнать больше</a>
 						</div>
 					</div>
+					<p class="avatar__figure avatar__figure-1">{ }</p>
+					<p class="avatar__figure avatar__figure-2">#</p>
+					<p class="avatar__figure avatar__figure-3">&lt;/&gt;</p>
+					<p class="avatar__figure avatar__figure-4">&lt;div&gt;</p>
+					<p class="avatar__figure avatar__figure-5"></p>
 				</section>
 				
 				<section class="doing-and-work container">
-						<h2 id="doing">Что я делаю</h2>
+						<h2 class="doing-and-work__title">Что я делаю</h2>
 						<ul class="item__wrap">
 								<li class="doing__item">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</li>
 								<li class="doing__item">Адаптивная вёрстка под&nbsp;все браузеры и&nbsp;устройства</li>
 								<li class="doing__item">Frontend–разработка и&nbsp;программирование</li>
 								<li class="doing__item">Исправление и&nbsp;доработка существующей вёрстки</li>
 						</ul>
-						<a href="#price" class="button-orange button-center">Узнать стоимость</a>
+						<a href="#price" class="button_orange button_center">Узнать стоимость</a>
 				</section>
 
 				<section class="doing-and-work properties container">
-							<h2>Примеры моих работ</h2>
+							<h2 class="doing-and-work__title properties__title">Примеры моих работ</h2>
 							<div class="wrap-slider">
-								<div class="item__wrap item__work">
+								<div class="item__wrap item__wrap_properties">
 									<a href="#" class="work__item">
 										<img src="img/image-1.jpg" alt="Сайт Веры Антоновой">
 										<p>Сайт психолога Веры Антоновой</p>
@@ -64,10 +69,10 @@
 										<p>Сайт магазина «Рыболов»</p>
 									</a>
 								</div>
-								<button aria-label="Переключатель влево" class="arrow arrow-left"></button>
-								<button aria-label="Переключатель вправо" class="arrow arrow-right"></button>
+								<button aria-label="Переключатель влево" class="arrow arrow_left"></button>
+								<button aria-label="Переключатель вправо" class="arrow arrow_right"></button>
 							</div>
-							<a class="button-orange button-center">Заказать проект</a>
+							<a class="button_orange button_center">Заказать проект</a>
 					</section>
 
 				<section class="price" id="price">
@@ -80,15 +85,20 @@
 							<span>*</span> Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
 								в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.
 						</p>
+						<p class="price__figure price__figure-1">{ }</p>
+						<p class="price__figure price__figure-2">#</p>
+						<p class="price__figure price__figure-3">&lt;/&gt;</p>
+						<p class="price__figure price__figure-4">{ }</p>
+						<p class="price__figure price__figure-5">&lt;div&gt;</p>
 					</div>
 				</section>
 
-				<footer>
+				<footer class="footer">
 					<div class="container flex">
 							<ul class="links">
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Портфолио</a></li>
-								<li><a href="#">Стоимость</a></li>
+								<li><a class="links__item" href="#">Услуги</a></li>
+								<li><a class="links__item" href="#">Портфолио</a></li>
+								<li><a class="links__item" href="#">Стоимость</a></li>
 							</ul>
 						<address class="email">
 							<ul>
