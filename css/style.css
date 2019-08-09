@@ -317,7 +317,7 @@ p {
 }
 
 .price {
-	background-image: linear-gradient(15deg, #ff8f5a, #ff8f5a90, #ff2f96, #ff2f96);
+	background-image: linear-gradient(15deg, #ff8f5a, #ff8f5a, #ff2f96, #ff2f96);
 	background-color: #ff8f5a;
 	padding: 75px 0 80px;
 	overflow: hidden;
