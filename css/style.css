@@ -326,8 +326,6 @@ p {
 }
 
 .price__wrap {
-	display: flex;
-	flex-direction: column;
 	position: relative;
 	width: 1920px;
 	max-width: 100%;
@@ -399,8 +397,6 @@ p {
 }
 
 .doing-and-work {
-	display: flex;
-	flex-direction: column;
 	padding-bottom: 100px;
 	padding-top: 90px;
 	text-align: center;
@@ -500,13 +496,13 @@ p {
 }
 
 .arrow_left {
-	top: 26%;
+	top: 33%;
 	left: -30px;
 	filter: drop-shadow(2px 2px 4px #00000080);
 }
 
 .arrow_right {
-	top: 26%;
+	top: 33%;
 	right: -30px;
 	filter: drop-shadow(2px -2px 4px #00000080);
 	transform: rotate(180deg);
