@@ -965,12 +965,6 @@ p {
     background-size: 14px 10px;
     padding-left: 33px;
 	}
-	.fa-phone-alt {
-    font-size: 14px;
-	}
-	.fa-envelope {
-    font-size: 14px;
-	}
 	.сallback-footer {
 		width: 280px;
     height: 55px;
@@ -1086,15 +1080,5 @@ p {
 	}
 	.work__item p {
 		font-size: 18px;
-	}
-	.fa-phone-alt:before {
-    background: linear-gradient(to right, #ff2f96, #ff2f96, #ff8f5a);
-		background-clip: text;
-		-webkit-background-clip: text;
-	}
-	.fa-envelope:before {
-		background: linear-gradient(to bottom, #ff2f96, #ff2f96, #ff8f5a);
-    background-clip: text;
-		-webkit-background-clip: text;
 	}
 }
