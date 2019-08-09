@@ -312,7 +312,7 @@ p {
 
 .avatar__img_wrapper {
 	position: absolute;
-	bottom: -237px;
+	bottom: -234px;
 	right: 0;
 }
 
@@ -1013,9 +1013,9 @@ p {
 		left: 54%; 
 		transform: rotate(-30deg);
 	}
-	/* .avatar__img_wrapper {
-		height: 330px;
-	} */
+	.avatar__img {
+		max-height: 330px;
+	}
 	.avatar__info-wrap {
 		padding: 15px 20px 0;
 	}
