@@ -430,7 +430,7 @@ p {
 }
 
 .doing-and-work__item-wrap-2 {
-	overflow: auto;
+	overflow: hidden;
 }
 
 .wrap-slider {
@@ -471,7 +471,14 @@ p {
 	padding-top: 90px;
 }
 
-.work__item:not(:nth-child(3)) {
+.work__item {
+	position: relative;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s ease-out;
+}
+
+.work__item:not(:nth-child(5)) {
 	margin-right: 30px;
 }
 
