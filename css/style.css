@@ -503,6 +503,10 @@ p {
 	cursor: pointer;
 }
 
+.arrow:active, .arrow:focus {
+	outline: none;
+}
+
 .arrow_left {
 	top: 33%;
 	left: -30px;
