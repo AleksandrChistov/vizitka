@@ -651,6 +651,13 @@ p {
 	padding-bottom: 85px;
 }
 
+.work__item {
+	cursor: grab;
+}
+.work__item:active {
+	cursor: grabbing;
+}
+
 /* Адаптивная верстка */
 @media (max-width: 1024px) {
 	body {
@@ -782,6 +789,12 @@ p {
 	}
 	.doing__item {
 		max-width: 280px;
+	}
+	.work__item {
+		cursor: grab;
+	}
+	.work__item:hover {
+		cursor: grab;
 	}
 	.work__wrap-btns {
 		display: inline-block;
