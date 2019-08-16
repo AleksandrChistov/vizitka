@@ -15,24 +15,22 @@ $(function(){
   });
 
   function nextSlide() {
-    if(slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
-      translateWidth = (slideWidth + 30) * (slideCount - 2);
+    if(slideNow == slideCount || slideNow <= 0 || slideNow > slideCount) {
+      translateWidth = (slideWidth + 30) * 0;
       $('.work__item').css({
-        'transform': 'translate('+translateWidth+'px,0)',
-        '-o-transform': 'translate('+translateWidth+'px,0)',
-        '-webkit-transform': 'translate('+translateWidth+'px,0)'
+        'transform': 'translate(0,0)',
+        '-o-transform': 'translate(0,0)',
+        '-webkit-transform': 'translate(0,0)'
       });
-      slideNow = slideCount;
+      slideNow = 1;
     } else {
-      translateWidth = (slideWidth + 30) * (slideNow - 1);
+      translateWidth = (slideWidth + 30) * (slideNow);
       $('.work__item').css({
         'transform': 'translate('+translateWidth+'px,0)',
         '-o-transform': 'translate('+translateWidth+'px,0)',
         '-webkit-transform': 'translate('+translateWidth+'px,0)'
       });
-      slideNow--;
-      
-        
+      slideNow++;  
     }
   }
 
