@@ -73,7 +73,7 @@ $(function(){
     }
   });
 
-  if(slideCountWidth < 1064) {
+  if($(window).width() < 1024) {
 
 var initialPoint;
 var finalPoint;
