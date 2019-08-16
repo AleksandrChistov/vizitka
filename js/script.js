@@ -6,11 +6,11 @@ $(function(){
   var slideWidth = $('.work__item').width();
   var slideFirst = 0;
   
-  $('.arrow_left').click(function(){
+  $('.arrow_right').click(function(){
     nextSlide();
   });
 
-  $('.arrow_right').click(function(){
+  $('.arrow_left').click(function(){
     prevSlide();
   });
 
