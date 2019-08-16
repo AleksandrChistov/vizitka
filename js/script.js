@@ -16,7 +16,7 @@ $(function(){
 
   function nextSlide() {
     if(slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
-      translateWidth = (slideWidth + 30) * (slideCount - 1);
+      translateWidth = (slideWidth + 30) * (slideCount);
       $('.work__item').css({
         'transform': 'translate('+translateWidth+'px,0)',
         '-o-transform': 'translate('+translateWidth+'px,0)',
@@ -30,7 +30,9 @@ $(function(){
         '-o-transform': 'translate('+translateWidth+'px,0)',
         '-webkit-transform': 'translate('+translateWidth+'px,0)'
       });
-        slideNow--;
+      slideNow--;
+      
+        
     }
   }
 
