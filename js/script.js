@@ -43,7 +43,7 @@ $(function(){
 
   function prevSlide() {
     if(slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
-      var translateWidth = (slideWidth + 30) * (slideCount - 1);
+      translateWidth = (slideWidth + 30) * (slideCount - 1);
       $('.work__item').css({
         'transform': 'translate('+translateWidth+',0)',
         '-o-transform': 'translate('+translateWidth+',0)',
@@ -51,7 +51,7 @@ $(function(){
       });
       slideNow = slideCount;
     } else {
-      var translateWidth = (slideWidth + 30) * (slideNow - 2);
+      translateWidth = (slideWidth + 30) * (slideNow - 2);
       $('.work__item').css({
         'transform': 'translate('+translateWidth+'px,0)',
         '-o-transform': 'translate('+translateWidth+'px,0)',
