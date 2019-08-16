@@ -16,7 +16,7 @@ $(function(){
 
   function nextSlide() {
     if(slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
-      translateWidth = (slideWidth + 30) * (slideCount);
+      translateWidth = (slideWidth + 30) * (slideCount - 2);
       $('.work__item').css({
         'transform': 'translate('+translateWidth+'px,0)',
         '-o-transform': 'translate('+translateWidth+'px,0)',
