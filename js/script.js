@@ -24,7 +24,7 @@ $(function(){
       });
       slideNow = slideCount;
     } else {
-      translateWidth = (slideWidth + 30) * (slideNow - 2);
+      translateWidth = (slideWidth + 30) * (slideNow - 1);
       $('.work__item').css({
         'transform': 'translate('+translateWidth+'px,0)',
         '-o-transform': 'translate('+translateWidth+'px,0)',
