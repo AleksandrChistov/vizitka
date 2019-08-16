@@ -45,9 +45,9 @@ $(function(){
     if(slideNow == 1 || slideNow <= 0 || slideNow > slideCount) {
       translateWidth = (slideWidth + 30) * (slideCount - 1);
       $('.work__item').css({
-        'transform': 'translate('+translateWidth+',0)',
-        '-o-transform': 'translate('+translateWidth+',0)',
-        '-webkit-transform': 'translate('+translateWidth+',0)'
+        'transform': 'translate('+translateWidth+'px,0)',
+        '-o-transform': 'translate('+translateWidth+'px,0)',
+        '-webkit-transform': 'translate('+translateWidth+'px,0)'
       });
       slideNow = slideCount;
     } else {
