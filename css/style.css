@@ -1107,4 +1107,7 @@ p {
     width: 10px;
     height: 10px;
   }
+  .popup__title {
+    margin: 0;
+  }
 }
