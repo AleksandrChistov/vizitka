@@ -5,131 +5,152 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Frontend-разработчик и веб-верстальщик – Александр Чистов</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<script src="js/jquery-3.4.1.min.js" defer></script>
-		<script src="js/script.js" defer></script>
+		<script src="js/script.min.js" defer></script>
+		<script src="js/siema.min.js"></script>
 	</head>
 	<body>
-			<header class="header container">
-				<button type="button" aria-label="Открыть меню" class="header__toggle-menu">
-				</button>
-				<nav class="menu">
-					<ul class="menu__list">
-						<li class="menu__item"><a href="#">Услуги</a></li>
-						<li class="menu__item"><a class="menu__item_underline" href="#">Портфолио</a></li>
-						<li class="menu__item"><a href="#">Стоимость</a></li>
-					</ul>
-				</nav>
-				<div class="header__call">
-					<a href="tel:8(953)876-16-72" class="header__tel">8 (953) 876-16-72</a>
-					<button class="header__сallback" aria-label="Обратный звонок" id="сallback">Заказать звонок</button>
-				</div>
-			</header>
+		<header class="header container">
+  <button type="button" aria-label="Открыть меню" class="header__toggle-menu">
+  </button>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#">Услуги</a></li>
+      <li class="menu__item"><a class="menu__item_underline" href="#">Портфолио</a></li>
+      <li class="menu__item"><a href="#">Стоимость</a></li>
+    </ul>
+  </nav>
+  <div class="header__call">
+    <a href="tel:8(953)876-16-72" class="header__tel">8 (953) 876-16-72</a>
+    <button class="header__сallback" id="сallback" aria-label="Обратный звонок" id="сallback">Заказать звонок</button>
+  </div>
+</header>
+		<main class="main">
+  <section class="avatar">
+    <div class="container relative">
+      <div class="avatar__img_wrapper">
+        <picture class="avatar__img">
+          <source srcset="img/aleksandr.webp"
+                  type="image/webp">
+          <img src="img/aleksandr.png"
+                alt="Моё фото">    
+        </picture>
+      </div>
+      <div class="avatar__info-wrap">
+        <h1 class="avatar__title">Александр Чистов</h1>
+        <p class="avatar__description">Frontend-разработчик и веб-верстальщик</p>
+        <a href="#doing" class="button_orange">Узнать больше</a>
+      </div>
+    </div>
+    <div class="figure-wrapper" aria-hidden="true">
+      <span class="avatar__figure avatar__figure_1">{ }</span>
+      <span class="avatar__figure avatar__figure_2">#</span>
+      <span class="avatar__figure avatar__figure_3">&lt;/&gt;</span>
+      <span class="avatar__figure avatar__figure_4">&lt;div&gt;</span>
+      <span class="avatar__figure avatar__figure_5"></span>
+    </div>
+  </section>
+  
+  <section id="doing" class="doing-and-work container">
+      <h2 class="doing-and-work__title">Что я делаю</h2>
+      <ul class="doing-and-work__item-wrap">
+          <li class="doing__item">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</li>
+          <li class="doing__item">Адаптивная вёрстка под&nbsp;все браузеры и&nbsp;устройства</li>
+          <li class="doing__item">Frontend–разработка и&nbsp;программирование</li>
+          <li class="doing__item">Исправление и&nbsp;доработка существующей вёрстки</li>
+      </ul>
+      <a href="#price" class="button_orange button_center">Узнать стоимость</a>
+  </section>
 
-			<main class="main">
-				<section class="avatar">
-					<div class="container relative">
-						<div class="avatar__img_wrapper">
-							<img class="avatar__img" src="img/aleksandr.png" alt="Моё фото">
-						</div>
-						<div class="avatar__info-wrap">
-							<h1 class="avatar__title">Александр Чистов</h1>
-							<p class="avatar__description">Frontend-разработчик и веб-верстальщик</p>
-							<a href="#doing" class="button_orange">Узнать больше</a>
-						</div>
-					</div>
-					<div class="figure-wrapper" aria-hidden="true">
-						<span class="avatar__figure avatar__figure_1">{ }</span>
-						<span class="avatar__figure avatar__figure_2">#</span>
-						<span class="avatar__figure avatar__figure_3">&lt;/&gt;</span>
-						<span class="avatar__figure avatar__figure_4">&lt;div&gt;</span>
-						<span class="avatar__figure avatar__figure_5"></span>
-					</div>
-				</section>
-				
-				<section id="doing" class="doing-and-work container">
-						<h2 class="doing-and-work__title">Что я делаю</h2>
-						<ul class="item_wrap">
-								<li class="doing__item">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</li>
-								<li class="doing__item">Адаптивная вёрстка под&nbsp;все браузеры и&nbsp;устройства</li>
-								<li class="doing__item">Frontend–разработка и&nbsp;программирование</li>
-								<li class="doing__item">Исправление и&nbsp;доработка существующей вёрстки</li>
-						</ul>
-						<a href="#price" class="button_orange button_center">Узнать стоимость</a>
-				</section>
+  <section class="doing-and-work properties container">
+        <h2 class="doing-and-work__title properties__title">Примеры моих работ</h2>
+        <div class="wrap-slider">
+          <div class="doing-and-work__item-wrap doing-and-work__item-wrap-2 siema">
+            <a href="#" class="work__item">
+              <img src="img/image-1.jpg" alt="Сайт Веры Антоновой">
+              <p>Сайт психолога Веры Антоновой</p>
+            </a>
+            <a href="#" class="work__item">
+              <img src="img/image-2.jpg" alt="Магазин детской одежды">
+              <p>Сайт магазина детской одежды</p>
+            </a>
+            <a href="#" class="work__item">
+              <img src="img/image-3.jpg" alt="Магазин «Рыболов»">
+              <p>Сайт магазина «Рыболов»</p>
+            </a>
+            <a href="#" class="work__item">
+              <img src="img/image-4.jpg" alt="Магазин «Рыболов»">
+              <p>Сайт новостного агенства</p>
+            </a>
+          </div>
+          <button aria-label="Переключатель влево" class="arrow arrow_left prev"></button>
+          <button aria-label="Переключатель вправо" class="arrow arrow_right next"></button>
+        </div>
+        <a class="button_orange button_center" id="order">Заказать проект</a>
+    </section>
 
-				<section class="doing-and-work properties container">
-							<h2 class="doing-and-work__title properties__title">Примеры моих работ</h2>
-							<div class="wrap-slider">
-								<div class="item_wrap item_wrap-2">
-									<a href="#" class="work__item">
-										<img src="img/image-1.jpg" alt="Сайт Веры Антоновой">
-										<p>Сайт психолога Веры Антоновой</p>
-									</a>
-									<a href="#" class="work__item">
-										<img src="img/image-2.jpg" alt="Магазин детской одежды">
-										<p>Сайт магазина детской одежды</p>
-									</a>
-									<a href="#" class="work__item">
-										<img src="img/image-3.jpg" alt="Магазин «Рыболов»">
-										<p>Сайт магазина «Рыболов»</p>
-									</a>
-								</div>
-								<button aria-label="Переключатель влево" class="arrow arrow_left"></button>
-								<button aria-label="Переключатель вправо" class="arrow arrow_right"></button>
-							</div>
-							<a class="button_orange button_center">Заказать проект</a>
-					</section>
+  <section class="price" id="price">
+    <div class="price__wrap">
+      <p class="price__title">
+        Адаптивная вёрстка под&nbsp;все&nbsp;устройства
+        и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
+      </p>
+      <p class="price__description">
+        <span>*</span> Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
+          в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.
+      </p>
+      <div class="figure-wrapper" aria-hidden="true">
+        <span class="price__figure price__figure_1">{ }</span>
+        <span class="price__figure price__figure_2">#</span>
+        <span class="price__figure price__figure_3">&lt;/&gt;</span>
+        <span class="price__figure price__figure_4">{ }</span>
+        <span class="price__figure price__figure_5">&lt;div&gt;</span>
+      </div>
+    </div>
+  </section>
 
-				<section class="price" id="price">
-					<div class="price__wrap">
-						<p class="price__title">
-							Адаптивная вёрстка под&nbsp;все&nbsp;устройства
-							и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
-						</p>
-						<p class="price__description">
-							<span>*</span> Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
-								в&nbsp;зависимости от&nbsp;сложности&nbsp;задач.
-						</p>
-						<div class="figure-wrapper" aria-hidden="true">
-							<span class="price__figure price__figure_1">{ }</span>
-							<span class="price__figure price__figure_2">#</span>
-							<span class="price__figure price__figure_3">&lt;/&gt;</span>
-							<span class="price__figure price__figure_4">{ }</span>
-							<span class="price__figure price__figure_5">&lt;div&gt;</span>
-						</div>
-					</div>
-				</section>
+    <footer class="footer">
+    <div class="container flex">
+        <ul class="links links_footer">
+          <li><a class="links__item" href="#">Услуги</a></li>
+          <li><a class="links__item" href="#">Портфолио</a></li>
+          <li><a class="links__item" href="#">Стоимость</a></li>
+        </ul>
+      <address class="footer__contacts">
+        <ul>
+          <li><a class="footer__call" href="tel:8(953)876-16-72">8 (953) 876-16-72</a></li>
+          <li><a class="footer__mail" href="mailto:info@aleksandrchistov.ru">info@aleksandrchistov.ru</a></li>
+        </ul>
+      </address>
+      <div class="social">
+          <button class="сallback-footer" id="сallback" aria-label="Обратный звонок">Заказать звонок</button>
+        <ul>
+            <li><a class="social__item social__item_vk" href="#" aria-label="Вконтакте"></a></li>
+            <li><a class="social__item social__item_fb" href="#" aria-label="Facebook"></a></li>
+            <li><a class="social__item social__item_tw" href="#" aria-label="Twitter"></a></li>
+            <li><a class="social__item social__item_ins" href="#" aria-label="Instagram"></a></li>
+          </ul>
+      </div>
+    </div>
+    <p class="footer__copyright">
+      © Александр Чистов, 2019
+    </p>
+  </footer>
 
-				<footer class="footer">
-					<div class="container flex">
-							<ul class="links links_footer">
-								<li><a class="links__item" href="#">Услуги</a></li>
-								<li><a class="links__item" href="#">Портфолио</a></li>
-								<li><a class="links__item" href="#">Стоимость</a></li>
-							</ul>
-						<address class="email">
-							<ul>
-								<li><a class="footer__call" href="tel:8(953)876-16-72">8 (953) 876-16-72</a></li>
-								<li><a class="footer__mail" href="mailto:info@aleksandrchistov.ru">info@aleksandrchistov.ru</a></li>
-							</ul>
-						</address>
-						<div class="social">
-								<button class="сallback-footer" aria-label="Обратный звонок">Заказать звонок</button>
-							<ul>
-									<li><a class="social__item social__item_vk" href="#" aria-label="Вконтакте"></a></li>
-									<li><a class="social__item social__item_fb" href="#" aria-label="Facebook"></a></li>
-									<li><a class="social__item social__item_tw" href="#" aria-label="Twitter"></a></li>
-									<li><a class="social__item social__item_ins" href="#" aria-label="Instagram"></a></li>
-								</ul>
-						</div>
-					</div>
-					<p class="footer__copyright">
-						© Александр Чистов, 2019
-					</p>
-				</footer>
-			</main>
-		
+</main>
+		<div class="overlay">
+  <div class="popup">
+    <div class="popup__close-btn">&times;</div>
+    <form class="popup__form" action="" method="POST">
+      <p class="popup__title">Оставьте заявку</p>
+      <p class="popup__description">и я свяжусь с Вами в ближайшее время</p>
+        <input class="popup__name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё ]+" type="text" name="name" id="name" required>
+        <input class="popup__phone" type="text" placeholder="Номер телефона" name="phone" id="phone" required>
+      <input class="popup__button button_orange" type="submit" value="Отправить">
+    </form>
+  </div>
+</div>
 	</body>
 </html>
