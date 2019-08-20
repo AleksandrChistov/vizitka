@@ -51,7 +51,7 @@ $(function(){
   // Всплывающее окно с формой
   var overlay = $('.overlay'),
       modal = $('.popup'),
-      link = $('#сallback'),
+      link = $('.сallback'),
       close = $('.popup__close-btn'),
       order = $('#order'),
       popupButton = $('.popup__button');
