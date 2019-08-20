@@ -10,8 +10,8 @@ $(function(){
   document.querySelector('.next').addEventListener('click', () => mySiema.next());
   
   // Слайдер на экранах меньше 1025px
-  if( window.innerWidth <= 1024 ){
-      Siema.prototype.addPagination = function() {
+  if(window.innerWidth <= 1024 || window.outerWidth <= 1024) {
+    Siema.prototype.addPagination = function() {
     for (let i = 0; i < this.innerElements.length; i++) {
       const btn = document.createElement('button');
       btn.className = 'work__btn';
@@ -19,9 +19,24 @@ $(function(){
       this.selector.appendChild(btn);
       $('.work__btn').first().addClass('work__btn_active');
     }
-  };
-  mySiema.addPagination();
+    };
+    mySiema.addPagination();
   }
+
+  window.addEventListener("resize", function() {
+    if(window.innerWidth <= 1024 || window.outerWidth <= 1024) {
+      Siema.prototype.addPagination = function() {
+      for (let i = 0; i < this.innerElements.length; i++) {
+        const btn = document.createElement('button');
+        btn.className = 'work__btn';
+        btn.addEventListener('click', () => this.goTo(i));
+        this.selector.appendChild(btn);
+        $('.work__btn').first().addClass('work__btn_active');
+      }
+    };
+    mySiema.addPagination();
+    }
+  }, false);
 
   // Маска для ввода телефона
   var phoneInput = document.querySelector('.popup__phone');
@@ -58,7 +73,7 @@ $(function(){
   var element = '<input class="popup__email" type="email" placeholder="Ваш e-mail" name="email" id="email" required="">';
   
   link.on('click', function(){
-    overlay.show('slow');
+    overlay.show(500, 'linear');
     modal.toggleClass('popup_active');
     if($('input').is('.popup__email') == true) {
       $('.popup__email').remove();
@@ -66,7 +81,7 @@ $(function(){
   });
 
   order.on('click', function(){
-    overlay.show('slow');
+    overlay.show(500, 'linear');
     modal.toggleClass('popup_active');
     if($('input').is('.popup__email') !== true) {
       popupButton.before($(element));
@@ -74,7 +89,7 @@ $(function(){
   });
 
   close.on('click', function(){
-    overlay.hide('slow');
+    overlay.hide(500, 'linear');
     modal.toggleClass('popup_active');
   });
 
