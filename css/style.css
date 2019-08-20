@@ -467,6 +467,7 @@ p {
 .footer__contacts li,
 .social li {
   list-style: none;
+  display: flex;
 }
 .footer__contacts li:first-child {
   margin-bottom: 30px;
@@ -620,6 +621,9 @@ p {
   width: 100%;
   min-width: 100%;
   font-size: 24px;
+  -webkit-appearance: none;
+  text-align: center;
+  display: inline-block;
 }
 @media (max-width: 1024px) {
   body {
@@ -764,8 +768,8 @@ p {
   }
   .price__wrap {
     margin: 0;
-    width: auto;
-    min-width: auto;
+    width: 100%;
+    min-width: 100%;
   }
   .price__figure_1 {
     top: -25%;
@@ -1221,6 +1225,16 @@ p {
   }
   .price {
     padding: 45px 20px;
+    max-width: 100%;
+    display: block;
+  }
+  .price__title {
+    max-width: 100%;
+    margin: 0 0 30px;
+  }
+  .price__description {
+    max-width: 100%;
+    margin: 0;
   }
   .price__figure {
     display: none;
