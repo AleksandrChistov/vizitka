@@ -48,7 +48,7 @@ $(function(){
       } 
   });
 
-  // Всплывающее окно
+  // Всплывающее окно с формой
   var overlay = $('.overlay'),
       modal = $('.popup'),
       link = $('#сallback'),
@@ -65,17 +65,55 @@ $(function(){
     }
   });
 
-  close.on('click', function(){
-    overlay.hide('slow');
-    modal.toggleClass('popup_active');
-  });
-
   order.on('click', function(){
     overlay.show('slow');
     modal.toggleClass('popup_active');
     if($('input').is('.popup__email') !== true) {
       popupButton.before($(element));
     }
+  });
+
+  close.on('click', function(){
+    overlay.hide('slow');
+    modal.toggleClass('popup_active');
+  });
+
+  // Мобильное меню
+  var toggleMenu = $('.header__toggle-menu'),
+      menu = $('.menu'),
+      menuClose = $('.menu__close-btn'),
+      navLink = $('.menu__item a');
+  
+  toggleMenu.click(function(){
+    menu.toggleClass('menu_active');
+  });
+
+  menuClose.click(function(){
+    menu.toggleClass('menu_active');
+  });
+
+  navLink.on('click', function(event){
+    event.preventDefault();
+    var anchor = $(this).attr('href'),
+        top = $(anchor).offset().top;
+    $('html,body').animate({scrollTop: top}, 500);
+  });
+
+  // Скролл для навигационных ссылок в футере
+  var footerLink = $('.links__item');
+  footerLink.on('click', function(event){
+    event.preventDefault();
+    var anchorLink = $(this).attr('href'),
+        topLink = $(anchorLink).offset().top;
+    $('html,body').animate({scrollTop: topLink}, 500);
+  });
+  // Скролл для кнопок orange
+  var buttonLink = $('.button_link');
+  buttonLink.on('click', function(event){
+    event.preventDefault();
+    var anchorButton = $(this).attr('href'),
+        buttonLink = $(anchorButton).offset().top;
+    $('html,body').animate({scrollTop: buttonLink}, 500);
   });
 
 });

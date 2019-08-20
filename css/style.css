@@ -92,6 +92,9 @@ p {
 .menu__item a:hover {
   border-bottom: 1px solid #1f1f24;
 }
+.menu__close-btn {
+  display: none;
+}
 .menu__item .menu__item_underline {
   color: #fc557c;
   border-bottom: 1px solid #fc557c;
@@ -127,6 +130,10 @@ p {
 .header__сallback:hover {
   box-shadow: inset 0 0 0 50px #ff2f96;
   color: #fff;
+}
+.header__сallback:focus,
+.header__сallback:active {
+  outline: none;
 }
 .avatar {
   padding: 175px 0 230px;
@@ -565,6 +572,10 @@ p {
   color: #fff;
   border: 2px solid #fff;
 }
+.popup__close-btn:focus,
+.popup__close-btn:active {
+  outline: none;
+}
 .popup__title {
   font-size: 28px;
   font-weight: 500;
@@ -610,7 +621,55 @@ p {
     margin-top: 30px;
   }
   .menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.85);
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    margin: 0;
+    padding: 30px 20px;
+    border-bottom: 1px solid rgba(248,35,112,0.7);
+    transform: translate(0, -160px);
+    transition: transform 1s;
+  }
+  .menu_active {
+    transform: translate(0, 0);
+  }
+  .menu__list {
+    justify-content: center;
+  }
+  .menu__item {
+    margin: 0;
+    padding: 0 25px;
+    border-right: 1px solid #fff;
+  }
+  .menu__item:first-child {
+    border-left: 1px solid #fff;
+  }
+  .menu__item a {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    color: #fff;
+  }
+  .menu__item a:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .menu__close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 32px;
+    color: #fc557c;
+    cursor: pointer;
+    transition: transform 0.4s linear;
+  }
+  .menu__close-btn:hover {
+    transform: scale(1.5);
   }
   .header__toggle-menu {
     background: url("../img/icons/toggle-menu.png") left top no-repeat;
@@ -624,6 +683,13 @@ p {
     border: none;
     padding: 0;
     cursor: pointer;
+  }
+  .header__toggle-menu:hover {
+    animation: rotate 0.5s ease-out;
+  }
+  .header__toggle-menu:active,
+  .header__toggle-menu:focus {
+    outline: none;
   }
   .button_orange {
     font-weight: 500;
@@ -774,6 +840,50 @@ p {
   .links_footer {
     margin-bottom: 30px;
   }
+@-moz-keyframes rotate {
+    30% {
+      transform: scale(1.1);
+    }
+    65% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@-webkit-keyframes rotate {
+    30% {
+      transform: scale(1.1);
+    }
+    65% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@-o-keyframes rotate {
+    30% {
+      transform: scale(1.1);
+    }
+    65% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@keyframes rotate {
+    30% {
+      transform: scale(1.1);
+    }
+    65% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
 }
 @media (max-width: 800px) {
   .avatar {
@@ -878,6 +988,14 @@ p {
     width: 24px;
     height: 18px;
     background-size: 24px 18px;
+  }
+  .menu {
+    height: 100px;
+    padding: 50px 20px;
+  }
+  .menu__close-btn {
+    top: 10px;
+    right: 20px;
   }
   .header__call {
     justify-content: space-between;
@@ -1000,6 +1118,32 @@ p {
   .header {
     margin-bottom: 85px;
   }
+  .menu {
+    height: 150px;
+    padding: 20px 40px 20px;
+  }
+  .menu__list {
+    flex-direction: column;
+  }
+  .menu__item {
+    border-bottom: 1px solid #fff;
+    border-right: 0;
+    padding: 0 0 15px;
+    margin: 0 0 15px 0;
+  }
+  .menu__item:first-child {
+    border-left: 0;
+  }
+  .menu__item:last-child {
+    border: 0;
+    margin: 0;
+  }
+  .menu__item .menu__item_underline {
+    border-bottom: 0;
+  }
+  .menu__item .menu__item_underline:hover {
+    border-bottom: 1px solid #fc557c;
+  }
   .avatar {
     position: relative;
   }
@@ -1109,5 +1253,10 @@ p {
   }
   .popup__title {
     margin: 0;
+  }
+  .popup__name,
+  .popup__phone,
+  .popup__email {
+    font-size: 16px;
   }
 }
