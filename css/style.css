@@ -365,24 +365,24 @@ p {
   background: url("../img/icons/layout.png") center top no-repeat;
   background-size: 80px 74px;
   margin-right: 20px;
-  flex-basis: 260px;
+  width: 260px;
 }
 .doing__item:nth-child(2) {
   background: url("../img/icons/responsive.png") center top no-repeat;
   background-size: 79px 74px;
   margin-right: 20px;
-  flex-basis: 280px;
+  width: 280px;
 }
 .doing__item:nth-child(3) {
   background: url("../img/icons/programming.png") center top no-repeat;
   background-size: 74px 74px;
   margin-right: 20px;
-  flex-basis: 210px;
+  width: 210px;
 }
 .doing__item:last-child {
   background: url("../img/icons/coding.png") center top no-repeat;
   background-size: 74px 74px;
-  flex-basis: 250px;
+  width: 250px;
 }
 .doing__item {
   font: 20px/30px 'Roboto', sans-serif;
@@ -642,7 +642,6 @@ p {
     z-index: 2;
     margin: 0;
     padding: 30px 20px;
-    border-bottom: 1px solid rgba(248,35,112,0.7);
     transform: translate(0, -160px);
     transition: transform 1s;
   }
@@ -806,7 +805,7 @@ p {
   .doing__item:nth-child(3),
   .doing__item:last-child {
     margin-right: 0;
-    flex-basis: 50%;
+    width: 50%;
     text-align: -webkit-center;
   }
   .doing__item {
@@ -1092,6 +1091,12 @@ p {
     display: flex;
     justify-content: center;
   }
+  .doing__item:first-child,
+  .doing__item:nth-child(2),
+  .doing__item:nth-child(3),
+  .doing__item:last-child {
+    width: 80%;
+  }
   .work__btn {
     margin-top: 20px;
   }
@@ -1194,6 +1199,9 @@ p {
   }
   .avatar__img {
     max-height: 330px;
+  }
+  .avatar__img-png {
+    width: 240px;
   }
   .avatar__info-wrap {
     padding: 15px 20px 0;
